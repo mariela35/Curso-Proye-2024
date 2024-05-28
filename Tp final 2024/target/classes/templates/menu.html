@@ -1,0 +1,37 @@
+<!-- Menu de navegación -->
+<div th:fragment="menu">
+    <nav class="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/icons/school.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Colegio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/alumnos">Alumnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/configuracion">Configuración</a>
+                    </li>
+                    <li>
+                        <div id="reloj" class="nav-link active text-center text-light bg-success m-1" style="border-radius: 10px;">
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 text-primary" type="search" placeholder="Search"
+                        aria-label="Search" name="buscar" value="">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menú de navegación -->
